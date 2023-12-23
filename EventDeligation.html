@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <ul id="gadget">
+            <li id="mobile">mobile</li>
+            <li id="laptop">laptop</li>
+            <li id="speaker">speaker</li>
+            
+        </ul>
+    </div>
+</body>
+<script>
+document.querySelector('#gadget').addEventListener('click',(e)=>{
+    console.log(e.target.id);
+    window.location.href='/'+e.target.id
+})
+</script>
+</html>
